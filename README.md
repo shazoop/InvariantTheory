@@ -1,0 +1,3 @@
+# InvariantTheory
+
+Project applying [invariant theory](https://en.wikipedia.org/wiki/Invariant_theory) to build robust image classifiers, training classifers on the original dataset and testing on a perturbed dataset where images were corrupted by transformations like rotations, shifting, etc. The goal was to construct that, without seeing the pertubed dataset, was automatically robust to its perturbations. Invariant theory concerns itself with finding the (generators of invariant polynomials)[https://en.wikipedia.org/wiki/Finitely_generated_algebra] and we leveraged these invariants to build in robustness. Tested this approach on MNIST, and shallow fully-connected classifiers achieved 90%+ accuracy on the perturbed dataset.
